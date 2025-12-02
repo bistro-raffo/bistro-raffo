@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bistro Raffo – Modern Italian-British Bistro</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f2ed;
+  color: #2b2624;
+}
+header {
+  background: #3f2b24;
+  color: #fdfaf5;
+  padding: 30px;
+  text-align: center;
+}
+header img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+nav {
+  background: #5d4236;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+nav a {
+  color: #fdfaf5;
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+section {
+  padding: 30px 12%;
+  border-bottom: 1px solid #ddd0c3;
+  background: #fdfaf5;
+}
+h1, h2, h3 {
+  color: #4a2f2b;
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+.hero img {
+  max-width: 420px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.hero-text {
+  flex: 1 1 280px;
+}
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  gap: 20px;
+}
+.menu-card {
+  background: #f7efe4;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.menu-card h3 {
+  margin-top: 0;
+}
+.tag {
+  display: inline-block;
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 6px;
+  background: #e0c4aa;
+  margin-right: 6px;
+}
+.table-like {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+.table-like th, .table-like td {
+  border: 1px solid #d8c7b4;
+  padding: 8px;
+  text-align: left;
+  font-size: 14px;
+}
+footer {
+  background: #3f2b24;
+  color: #fdfaf5;
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+}
+.highlight {
+  background: #fff5d9;
+  padding: 10px;
+  border-left: 4px solid #f2a900;
+  margin: 10px 0;
+}
+.form-field {
+  margin-bottom: 10px;
+}
+input, select, textarea {
+  padding: 6px;
+  width: 100%;
+  max-width: 380px;
+  margin-top: 4px;
+}
+button {
+  padding: 8px 16px;
+  background: #5d4236;
+  color: #fdfaf5;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background: #3f2b24;
+}
+@media (max-width: 768px) {
+  section {
+    padding: 20px 6%;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Bistro Raffo</h1>
+  <p>Modern Italian-British bistro • Seasonal menus • Local ingredients • Fully accessible</p>
+  <img src="bistro_exterior.png" alt="Bistro Raffo Exterior">
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#menus">Core Menu</a>
+  <a href="#seasonal">Seasonal & Holidays</a>
+  <a href="#kids">Kids</a>
+  <a href="#desserts">Desserts</a>
+  <a href="#drinks">Drinks</a>
+  <a href="#setmenus">Set Menus</a>
+  <a href="#specials">Chef's Specials</a>
+  <a href="#bookings">Bookings</a>
+  <a href="#sustainability">Sustainability</a>
+  <a href="#jobs">Jobs</a>
+  <a href="#policies">Policies</a>
+  <a href="#safety">Safety</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <div class="hero">
+    <div class="hero-text">
+      <h2>About Bistro Raffo</h2>
+      <p>Bistro Raffo is a 40-seat modern bistro blending Italian flavours with fresh British ingredients. We focus on seasonal menus, honest cooking, and a relaxed atmosphere that welcomes everyone, including wheelchair users and families.</p>
+      <p>Our concept was developed as a complete catering operations plan, covering everything from food safety and staffing to sustainability, technology, and financial planning.</p>
+      <div class="highlight">
+        <strong>Core values:</strong> Fresh • Seasonal • Accessible • Sustainable • Professional
+      </div>
+    </div>
+    <img src="bistro_interior.png" alt="Bistro Raffo Interior Dining Room">
+  </div>
+</section>
+
+<section id="menus">
+  <h2>Core Menu</h2>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <h3>Bruschetta Trio</h3>
+      <span class="tag">Starter</span> <span class="tag">Vegetarian</span>
+      <p>Tomato & basil, roasted pepper, and mushroom toppings on toasted sourdough.</p>
+      <p><strong>£6.25</strong></p>
+    </div>
+    <div class="menu-card">
+      <h3>Arancini al Formaggio</h3>
+      <span class="tag">Starter</span>
+      <p>Crispy risotto balls filled with mozzarella, served with a rich arrabbiata dip.</p>
+      <p><strong>£6.75</strong></p>
+    </div>
+    <div class="menu-card">
+      <h3>Garlic & Herb Focaccia</h3>
+      <span class="tag">Starter</span> <span class="tag">Vegan</span>
+      <p>Warm focaccia drizzled with garlic oil and sea salt, served with balsamic and olive oil.</p>
+      <p><strong>£5.95</strong></p>
+    </div>
+    <div class="menu-card">
+      <h3>Beef Ragu Tagliatelle</h3>
+      <span class="tag">Main</span>
+      <p>Slow-cooked British beef in rich tomato and red wine sauce served with fresh egg tagliatelle.</p>
+      <p><strong>£13.25</strong></p>
+    </div>
+    <div class="menu-card">
+      <h3>Chargrilled Chicken al Limone</h3>
+      <span class="tag">Main</span> <span class="tag">GF</span>
+      <p>Marinated chicken breast with lemon, garlic, and herbs, served with roasted potatoes and seasonal greens.</p>
+      <p><strong>£13.75</strong></p>
+    </div>
+    <div class="menu-card">
+      <h3>Mushroom Risotto</h3>
+      <span class="tag">Main</span> <span class="tag">Vegan</span> <span class="tag">GF</span>
+      <p>Creamy risotto with mixed mushrooms, finished with truffle oil and fresh herbs.</p>
+      <p><strong>£11.95</strong></p>
+    </div>
+    <div class="menu-card">
+      <h3>Raffo House Burger</h3>
+      <span class="tag">Main</span>
+      <p>Beef patty with provolone, caramelised onions, baby gem lettuce, and house sauce, served with fries.</p>
+      <p><strong>£13.95</strong></p>
+    </div>
+    <div class="menu-card">
+      <h3>Herb-Crusted Cod</h3>
+      <span class="tag">Main</span> <span class="tag">GF</span>
+      <p>Oven-baked cod with herb crumb, crushed new potatoes, and lemon butter sauce.</p>
+      <p><strong>£14.25</strong></p>
+    </div>
+  </div>
+  <p><em>Full costing for each dish, including gross profit margins and supplier details, is documented in the internal operations manual.</em></p>
+  <img src="bistro_dish.png" alt="Signature Dish" style="margin-top:20px; max-width:320px; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.2);">
+</section>
+
+<section id="seasonal">
+  <h2>Seasonal & Holiday Menus</h2>
+  <h3>Winter Menu Highlights</h3>
+  <ul>
+    <li><strong>Soup of the Day (Winter)</strong> – Changes daily; examples include roasted tomato, minestrone, or celeriac. Served with warm bread. £6.25</li>
+    <li><strong>Slow Beef Ragu with Pappardelle</strong> – Rich, slow-braised beef and red wine ragu served over wide ribbons of fresh pappardelle. £13.50</li>
+    <li><strong>Roasted Root Vegetable Risotto (Vegan)</strong> – Arborio rice cooked with stock, roasted parsnips, carrots, and beetroot, finished with herbs. £11.95</li>
+  </ul>
+  <h3>Summer Menu Highlights</h3>
+  <ul>
+    <li><strong>Caprese Salad Raffo</strong> – Sliced heritage tomatoes, mozzarella, basil, and olive oil with a balsamic drizzle. £7.25</li>
+    <li><strong>Lemon Herb Chicken Skewers</strong> – Grilled chicken skewers with lemon and herbs, served with couscous salad. £13.50</li>
+    <li><strong>Strawberry Panna Cotta</strong> – Vanilla panna cotta topped with macerated strawberries and a light syrup. £5.95</li>
+  </ul>
+  <h3>Halloween Special</h3>
+  <ul>
+    <li><strong>Pumpkin Soup with Spiced Seeds</strong> – Velvety pumpkin and garlic soup topped with roasted chilli pumpkin seeds. £6.50</li>
+    <li><strong>Black Garlic Tagliatelle</strong> – Fresh tagliatelle tossed with black garlic, olive oil, and roasted cherry tomatoes for a dark, rich flavour. £12.95</li>
+    <li><strong>“Spiderweb” Chocolate Cheesecake</strong> – Baked chocolate cheesecake decorated with a white chocolate spiderweb pattern. £6.25</li>
+  </ul>
+  <h3>Christmas Menu</h3>
+  <ul>
+    <li><strong>Roast Turkey with Cranberry Glaze</strong> – Slices of roast turkey with rosemary potatoes, sprouts, and cranberry glaze. £14.50</li>
+    <li><strong>Baked Camembert</strong> – Whole baked camembert with garlic, rosemary, and crusty bread for sharing. £9.95</li>
+    <li><strong>Gingerbread Cheesecake</strong> – Spiced cheesecake with a ginger biscuit base and cinnamon cream. £6.25</li>
+  </ul>
+  <p><strong>Birthday Offer:</strong> Book in advance and receive either a complimentary dessert or 10% off the total bill for the birthday guest. For larger celebrations, set menus and cake options are available on request.</p>
+</section>
+
+<section id="kids">
+  <h2>Kids' Menu</h2>
+  <p>Smaller portions with simple flavours, designed for younger guests.</p>
+  <ul>
+    <li><strong>Mini Pasta Pomodoro</strong> – Small pasta with tomato sauce and cheese. £5.50</li>
+    <li><strong>Kids' Chicken Strips</strong> – Baked chicken strips with fries and peas. £6.25</li>
+    <li><strong>Cheesy Garlic Bread</strong> – Sliced baguette with cheese and garlic butter. £4.25</li>
+    <li><strong>Kids' Scoop of Gelato</strong> – Choice of vanilla, chocolate, or strawberry. £3.25</li>
+    <li><strong>Kids' Drink</strong> – Small juice or milk. £1.50</li>
+  </ul>
+</section>
+
+<section id="desserts">
+  <h2>Desserts Menu</h2>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <h3>Lemon Tiramisu</h3>
+      <p>Lemon mascarpone and light sponge soaked in citrus syrup. £5.95</p>
+    </div>
+    <div class="menu-card">
+      <h3>Chocolate Hazelnut Fondant</h3>
+      <p>Warm fondant with molten hazelnut centre, served with vanilla gelato. £6.25</p>
+    </div>
+    <div class="menu-card">
+      <h3>Strawberry Panna Cotta</h3>
+      <p>Vanilla panna cotta with macerated strawberries and syrup. £5.95</p>
+    </div>
+    <div class="menu-card">
+      <h3>Affogato</h3>
+      <p>Vanilla gelato “drowned” in a shot of hot espresso. £4.50</p>
+    </div>
+  </div>
+</section>
+
+<section id="drinks">
+  <h2>Drinks Menu</h2>
+
+  <h3>Soft Drinks</h3>
+  <ul>
+    <li><strong>Homemade Lemonade</strong> – Fresh lemons, sugar syrup, sparkling water. £3.25</li>
+    <li><strong>Raffo Raspberry Fizz</strong> – Raspberry purée with soda and mint. £3.50</li>
+    <li><strong>Cola / Diet Cola</strong> – Chilled bottled cola. £2.40</li>
+    <li><strong>Orange Juice</strong> – Freshly squeezed. £2.80</li>
+  </ul>
+
+  <h3>Hot Drinks</h3>
+  <ul>
+    <li><strong>Espresso</strong> – Single or double shot. £2.10 / £2.60</li>
+    <li><strong>Cappuccino</strong> – Steamed milk and foam. £3.00</li>
+    <li><strong>Latte</strong> – Smooth steamed milk. £3.10</li>
+    <li><strong>Tea Selection</strong> – Breakfast, Earl Grey, Green, Peppermint. £2.30</li>
+    <li><strong>Hot Chocolate</strong> – Creamy and rich, optional whipped cream. £3.10</li>
+  </ul>
+
+  <h3>Mocktails</h3>
+  <ul>
+    <li><strong>Virgin Mojito</strong> – Lime, mint, sugar, soda. £4.25</li>
+    <li><strong>Tropical Sunset</strong> – Orange, pineapple, grenadine. £4.25</li>
+    <li><strong>Berry Cooler</strong> – Blackberry, strawberry, lemonade. £4.20</li>
+  </ul>
+
+  <h3>Alcoholic Drinks</h3>
+  <ul>
+    <li><strong>House White Wine</strong> – Crisp and light. £4.95 glass / £18.00 bottle</li>
+    <li><strong>House Red Wine</strong> – Smooth and fruity. £5.10 glass / £18.50 bottle</li>
+    <li><strong>Bottled Italian Lager</strong> – Refreshing and crisp. £4.10</li>
+    <li><strong>Aperol Spritz</strong> – Classic Italian aperitivo with prosecco. £6.25</li>
+    <li><strong>Raffo Signature Berry Cocktail</strong> – Mixed berries, vodka, lemonade. £6.75</li>
+  </ul>
+
+  <p><em>Alcoholic drinks are only served to guests aged 18+ with valid ID.</em></p>
+</section>
+
+<section id="setmenus">
+  <h2>Set Menus</h2>
+  <h3>Evening Set Menu</h3>
+  <p>Available Sunday to Thursday, 5pm–7pm.</p>
+  <p><strong>2 courses £18.95 • 3 courses £22.95</strong></p>
+  <ul>
+    <li>Starter: Bruschetta Trio or Soup of the Day</li>
+    <li>Main: Beef Ragu Tagliatelle, Mushroom Risotto, or Chargrilled Chicken al Limone</li>
+    <li>Dessert: Lemon Tiramisu or Chocolate Hazelnut Fondant</li>
+  </ul>
+  <h3>Festive Set Menu (Christmas)</h3>
+  <p><strong>3 courses £27.95</strong></p>
+  <ul>
+    <li>Starter: Pumpkin Soup or Baked Camembert (for two)</li>
+    <li>Main: Roast Turkey with Cranberry Glaze or Herb-Crusted Cod</li>
+    <li>Dessert: Gingerbread Cheesecake or Strawberry Panna Cotta</li>
+  </ul>
+</section>
+
+<section id="specials">
+  <h2>Chef's Specials & Soup of the Day</h2>
+  <p>The Chef's Specials board changes frequently based on seasonal produce and inspiration from the kitchen.</p>
+  <ul>
+    <li><strong>Soup of the Day</strong> – Written on the specials board daily. Examples include roasted tomato, leek & potato, and minestrone. Served with warm bread. £6.25</li>
+    <li><strong>Chef's Pasta of the Day</strong> – Rotating pasta dish using seasonal ingredients. £12.95</li>
+    <li><strong>Seasonal Fish Special</strong> – Market fish with chef-selected accompaniments. £15.50</li>
+  </ul>
+  <p>All specials are prepared in limited quantities and may sell out during busy service.</p>
+</section>
+
+<section id="bookings">
+  <h2>Bookings</h2>
+  <p>You can enquire about a table using the form below. This is an example layout for the website; in a real system, the form would connect to a booking system or email inbox.</p>
+  <form>
+    <div class="form-field">
+      <label for="name">Name</label><br>
+      <input type="text" id="name" name="name" placeholder="Your name">
+    </div>
+    <div class="form-field">
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email" placeholder="you@example.com">
+    </div>
+    <div class="form-field">
+      <label for="date">Preferred Date</label><br>
+      <input type="date" id="date" name="date">
+    </div>
+    <div class="form-field">
+      <label for="time">Preferred Time</label><br>
+      <input type="time" id="time" name="time">
+    </div>
+    <div class="form-field">
+      <label for="guests">Number of Guests</label><br>
+      <select id="guests" name="guests">
+        <option>1</option>
+        <option>2</option>
+        <option>3–4</option>
+        <option>5–6</option>
+        <option>7–8</option>
+        <option>9+</option>
+      </select>
+    </div>
+    <div class="form-field">
+      <label for="notes">Notes (allergies, access needs, occasion)</label><br>
+      <textarea id="notes" name="notes" rows="4" placeholder="Tell us if it's a birthday, if you have allergies, or need step-free access."></textarea>
+    </div>
+    <button type="button">Submit Enquiry (Demo)</button>
+  </form>
+</section>
+
+<section id="sustainability">
+  <h2>Sustainability & Food Waste Reduction</h2>
+  <p>Bistro Raffo operates with a strong sustainability plan:</p>
+  <ul>
+    <li>Local suppliers to reduce food miles.</li>
+    <li>Vegetable trims used for stocks and soups.</li>
+    <li>Stale bread turned into croutons and breadcrumbs.</li>
+    <li>Used oil collected by specialist recycling contractors.</li>
+    <li>Fruit and vegetable waste sent for composting.</li>
+    <li>Safe, surplus food offered to local charities where possible.</li>
+  </ul>
+  <p>Takeaway packaging is recyclable or compostable, and we monitor energy and water usage each month.</p>
+</section>
+
+<section id="jobs">
+  <h2>Jobs at Bistro Raffo</h2>
+  <p>We operate with a clear staff hierarchy and fair working conditions.</p>
+  <table class="table-like">
+    <tr><th>Role</th><th>Typical Weekly Hours</th><th>Pay (approx.)</th><th>Contract Type</th></tr>
+    <tr><td>Head Chef</td><td>40–45</td><td>£15–£18/hour</td><td>Full-time</td></tr>
+    <tr><td>Sous Chef</td><td>35–40</td><td>£13–£15/hour</td><td>Full-time</td></tr>
+    <tr><td>Chef de Partie</td><td>30–38</td><td>£11–£13/hour</td><td>Full-time / Part-time</td></tr>
+    <tr><td>Commis Chef</td><td>20–30</td><td>£10.50–£11.50/hour</td><td>Part-time</td></tr>
+    <tr><td>Kitchen Porter</td><td>15–25</td><td>£10.50–£11/hour</td><td>Part-time</td></tr>
+    <tr><td>Front of House</td><td>10–30</td><td>£10.50–£12/hour</td><td>Part-time / Full-time</td></tr>
+  </table>
+  <h3>Holidays, Sick Days & Lateness</h3>
+  <ul>
+    <li>Holiday accrues according to UK law (minimum 5.6 weeks pro rata).</li>
+    <li>Sick days must be reported as early as possible before shift; self-certification up to 7 days.</li>
+    <li>Repeated no-shows or lateness may lead to a formal warning, then final warning, and possible dismissal.</li>
+  </ul>
+  <h3>Applying for a Job</h3>
+  <ol>
+    <li>Send CV and short cover message to jobs@bistroraffo.co.uk.</li>
+    <li>Attend trial shift and interview.</li>
+    <li>Provide proof of right to work and references.</li>
+  </ol>
+  <h3>Leaving Your Job</h3>
+  <p>Staff are asked to provide at least 2 weeks' written notice (4 weeks for senior roles). Exit interviews may be offered to collect feedback.</p>
+  <img src="bistro_team.png" alt="Bistro Raffo Team" style="margin-top:20px; max-width:420px; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.2);">
+</section>
+
+<section id="policies">
+  <h2>Key Policies</h2>
+  <h3>Customer Damage Policy</h3>
+  <p>If a customer intentionally or negligently damages property, we may charge a replacement fee:</p>
+  <ul>
+    <li>Plate: £3–£5</li>
+    <li>Glass: £2–£4</li>
+    <li>Chair: £30–£60</li>
+    <li>Light fitting: £50–£120</li>
+  </ul>
+  <p>All incidents are documented in the incident log.</p>
+  <h3>Accessibility</h3>
+  <ul>
+    <li>Wheelchair ramp at entrance.</li>
+    <li>Accessible toilet with rails and alarm cord.</li>
+    <li>Space left between tables for wheelchair turning.</li>
+    <li>Allergy information available on request.</li>
+  </ul>
+</section>
+
+<section id="safety">
+  <h2>Safety, HACCP & Checklists</h2>
+  <h3>Fire Safety</h3>
+  <ul>
+    <li>CO2 and wet-chemical extinguishers in the kitchen.</li>
+    <li>Fire blanket near the cooking line.</li>
+    <li>Clearly marked fire exits and assembly point.</li>
+  </ul>
+  <h3>Opening Checklist (Summary)</h3>
+  <ul>
+    <li>Check fridge and freezer temperatures.</li>
+    <li>Inspect for signs of pests.</li>
+    <li>Ensure hand-wash stations have soap and towels.</li>
+    <li>Check extraction system and gas supply.</li>
+  </ul>
+  <h3>Closing Checklist (Summary)</h3>
+  <ul>
+    <li>Deep clean key areas.</li>
+    <li>Empty bins and secure waste outside.</li>
+    <li>Turn off gas and non-essential electrics.</li>
+    <li>Lock chemical cupboard and back doors.</li>
+  </ul>
+  <h3>Pest & Fault Procedure</h3>
+  <p>Any sign of pests (droppings, gnaw marks) leads to immediate isolation of the area, deep cleaning, and contacting pest control. Equipment faults are logged, labelled as out of order, and reported to maintenance.</p>
+  <img src="bistro_kitchen.png" alt="Kitchen Pass" style="margin-top:20px; max-width:420px; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.2);">
+</section>
+
+<section id="contact">
+  <h2>Contact & Reservations</h2>
+  <p><strong>Address:</strong> High Street, Example Town, UK</p>
+  <p><strong>Bookings & General Enquiries:</strong> hello@bistroraffo.co.uk</p>
+  <p><strong>Job Applications:</strong> jobs@bistroraffo.co.uk</p>
+  <p>Opening hours and booking terms are fully detailed in the internal operations manual and can be adapted based on business needs.</p>
+</section>
+
+<footer>
+  <p>Bistro Raffo – Training and Educational Concept Restaurant Plan</p>
+</footer>
+
+</body>
+</html>
